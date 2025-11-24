@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Image to Sketch</title>
+    <style>
+body {
+    background: #111;       
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial;
+}
+
+input[type="file"]::file-selector-button {
+    background: linear-gradient(to right, #6a5acd, #00bfff);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(to right, #00bfff, #6a5acd);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+<h2>Image to Sketch Converter</h2>
+
+<form action="/convert" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <br>
+    <button type="submit">Convert to Sketch</button>
+</form>
+
+</body>
+</html>
